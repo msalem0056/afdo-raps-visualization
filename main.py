@@ -2,8 +2,7 @@ import pandas as pd
 from sklearn.datasets import load_breast_cancer
 import streamlit as st
 import streamlit.components.v1 as components
-import umap
-import umap.plot
+import umap.umap_ as umap
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
