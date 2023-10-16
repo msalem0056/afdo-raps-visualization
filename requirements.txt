@@ -1,5 +1,4 @@
 umap
-umap.plot
 seaborn
 pandas 
 matplotlib 
