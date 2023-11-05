@@ -20,7 +20,10 @@ def app(title=None)-> None:
         title (string, optional): The App name. Defaults to None.
     """
     st.title(title)
-    st.markdown("### Developer: Mike Salem [Linked In](https://www.linkedin.com/in/mike-salem)")
+    col1, col2, col3 = st.columns([0.1,.015,.1])
+    col1.markdown("### Developer: Mike Salem")
+    col2.image("LI-In-Bug.jpg", width=48)
+    col3.markdown("### [LinkedIn](https://www.linkedin.com/in/mike-salem/)")    
     st.write("Description: The following app was created to showcase exploratory data analysis as a component of model transparency. Both UMAP and PCA are showcased below for the breast cancer dataset.")
 
     dataframe = load_breast_cancer(as_frame= True)
